@@ -1,0 +1,11 @@
+/Users/sakshitomar/Sandeep Sir class/CICDApp/product/bin/Debug/net10.0/product.deps.json
+/Users/sakshitomar/Sandeep Sir class/CICDApp/product/bin/Debug/net10.0/product.dll
+/Users/sakshitomar/Sandeep Sir class/CICDApp/product/bin/Debug/net10.0/product.pdb
+/Users/sakshitomar/Sandeep Sir class/CICDApp/product/obj/Debug/net10.0/product.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sakshitomar/Sandeep Sir class/CICDApp/product/obj/Debug/net10.0/product.AssemblyInfoInputs.cache
+/Users/sakshitomar/Sandeep Sir class/CICDApp/product/obj/Debug/net10.0/product.AssemblyInfo.cs
+/Users/sakshitomar/Sandeep Sir class/CICDApp/product/obj/Debug/net10.0/product.csproj.CoreCompileInputs.cache
+/Users/sakshitomar/Sandeep Sir class/CICDApp/product/obj/Debug/net10.0/product.dll
+/Users/sakshitomar/Sandeep Sir class/CICDApp/product/obj/Debug/net10.0/refint/product.dll
+/Users/sakshitomar/Sandeep Sir class/CICDApp/product/obj/Debug/net10.0/product.pdb
+/Users/sakshitomar/Sandeep Sir class/CICDApp/product/obj/Debug/net10.0/ref/product.dll

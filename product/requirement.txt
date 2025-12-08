@@ -1,0 +1,15 @@
+introduction to xunit
+CI/CD pipline with Jenkins  / Github Action /Devops /Docker /kubernetes  
+SonarQube
+
+
+Correct Understanding of Reference Flow (API, Library, Test)
+In .NET, the reference direction must always flow downward, 
+
+product (Library) → productApi (API) → product.Test (xUnit)
+                1 ref.              2 ref
+
+Library Project goes into API.
+API goes into Test.
+Test never goes into API or Library.
+
