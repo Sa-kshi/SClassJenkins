@@ -9,3 +9,4 @@
 /Users/sakshitomar/Sandeep Sir class/CICDApp/product/obj/Debug/net10.0/refint/product.dll
 /Users/sakshitomar/Sandeep Sir class/CICDApp/product/obj/Debug/net10.0/product.pdb
 /Users/sakshitomar/Sandeep Sir class/CICDApp/product/obj/Debug/net10.0/ref/product.dll
+/Users/sakshitomar/Sandeep Sir class/CICDApp/product/obj/Debug/net10.0/product.sourcelink.json

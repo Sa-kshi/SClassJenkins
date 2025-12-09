@@ -33,3 +33,4 @@
 /Users/sakshitomar/Sandeep Sir class/CICDApp/productApi/obj/Debug/net10.0/productApi.pdb
 /Users/sakshitomar/Sandeep Sir class/CICDApp/productApi/obj/Debug/net10.0/productApi.genruntimeconfig.cache
 /Users/sakshitomar/Sandeep Sir class/CICDApp/productApi/obj/Debug/net10.0/ref/productApi.dll
+/Users/sakshitomar/Sandeep Sir class/CICDApp/productApi/obj/Debug/net10.0/productApi.sourcelink.json

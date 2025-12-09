@@ -1,0 +1,5 @@
+case study 1 : .net core + Xunit + console + dockerizes +github + jenkins = CI + CD(LOCALHOST)
+case study 2 :.net core + xunit + ef core + azure db + github + github action + azure web app = CI CD
+case study 3 :.net core + xunit + ef core + azure db + github + azure Devops + azure web app = CI CD
+case study 4 :azure service bus 
+

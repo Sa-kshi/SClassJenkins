@@ -13,3 +13,7 @@ Library Project goes into API.
 API goes into Test.
 Test never goes into API or Library.
 
+
+Business Logic Layer -product  (console app)
+product.test(console app)
+productApi(core app)

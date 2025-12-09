@@ -107,3 +107,4 @@
 /Users/sakshitomar/Sandeep Sir class/CICDApp/product.Test/obj/Debug/net10.0/product.Test.pdb
 /Users/sakshitomar/Sandeep Sir class/CICDApp/product.Test/obj/Debug/net10.0/product.Test.genruntimeconfig.cache
 /Users/sakshitomar/Sandeep Sir class/CICDApp/product.Test/obj/Debug/net10.0/ref/product.Test.dll
+/Users/sakshitomar/Sandeep Sir class/CICDApp/product.Test/obj/Debug/net10.0/product.Test.sourcelink.json
