@@ -7,20 +7,20 @@ FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 ARG configuration=Release
 WORKDIR /src
 
-# Copy csproj and restore
-COPY ["product/product.csproj", "product/"]
-RUN dotnet restore "product/product.csproj"
+# Copy csproj and restore (no 'product/' prefix)
+COPY product.csproj ./
+RUN dotnet restore "product.csproj"
 
-# Copy source code
-COPY product/. ./product
+# Copy all source code
+COPY . ./
 
 # Build project
-RUN dotnet build "product/product.csproj" -c $configuration -o /app/build
+RUN dotnet build "product.csproj" -c $configuration -o /app/build
 
 # Publish stage
 FROM build AS publish
 ARG configuration=Release
-RUN dotnet publish "product/product.csproj" -c $configuration -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "product.csproj" -c $configuration -o /app/publish /p:UseAppHost=false
 
 # Final image
 FROM base AS final
