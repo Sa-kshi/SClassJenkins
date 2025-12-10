@@ -7,8 +7,7 @@ ARG configuration=Release
 WORKDIR /src
 COPY ["product.csproj", "./"]
 RUN dotnet restore "product.csproj"
-COPY . .
-WORKDIR "/src/product"
+COPY product/. ./
 RUN dotnet build "product.csproj" -c $configuration -o /app/build
 
 FROM build AS publish

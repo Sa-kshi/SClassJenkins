@@ -3,3 +3,13 @@ case study 2 :.net core + xunit + ef core + azure db + github + github action + 
 case study 3 :.net core + xunit + ef core + azure db + github + azure Devops + azure web app = CI CD
 case study 4 :azure service bus 
 
+
+
+folder strudctur eis like 
+poc.slnx
+|--product 
+   |-> dockerfile
+|--productApi
+   |-> dockerfile
+|--productTest 
+   |-> dockerfile
