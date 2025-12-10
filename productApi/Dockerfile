@@ -10,7 +10,7 @@ ARG configuration=Release
 WORKDIR /src
 COPY ["productApi.csproj", "./"]
 RUN dotnet restore "productApi.csproj"
-COPY productApi/. ./
+COPY . ./
 WORKDIR "/src/productApi"
 RUN dotnet build "productApi.csproj" -c $configuration -o /app/build
 

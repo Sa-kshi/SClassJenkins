@@ -6,10 +6,14 @@ case study 4 :azure service bus
 
 
 folder strudctur eis like 
-poc.slnx
-|--product 
-   |-> dockerfile
-|--productApi
-   |-> dockerfile
-|--productTest 
-   |-> dockerfile
+SakshiCICD/
+├─ product/
+│  └─ product.csproj
+|  └─ docker file 
+├─ productApi/
+│  └─ productApi.csproj
+|  └─ docker file 
+├─ product.Test/
+│  └─ product.Test.csproj
+|  └─ docker file 
+└─ poc.slnx
