@@ -1,20 +1,23 @@
-FROM mcr.microsoft.com/dotnet/runtime:10.0 AS base
-WORKDIR /app
-
-USER app
-FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/sdk:10.0 AS build
+# Base runtime image
+FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 ARG configuration=Release
 WORKDIR /src
-COPY ["product.Test.csproj", "./"]
-RUN dotnet restore "product.Test.csproj"
-COPY . ./
-RUN dotnet build "product.Test.csproj" -c $configuration -o /app/build
 
-FROM build AS publish
-ARG configuration=Release
-RUN dotnet publish "product.Test.csproj" -c $configuration -o /app/publish /p:UseAppHost=false
+# Copy csproj and restore
+COPY ["product.Test/product.Test.csproj", "product.Test/"]
+RUN dotnet restore "product.Test/product.Test.csproj"
 
-FROM base AS final
+# Copy source code
+COPY product.Test/. ./product.Test
+
+# Build project
+RUN dotnet build "product.Test/product.Test.csproj" -c $configuration -o /app/build
+
+# Optional: Publish if needed
+RUN dotnet publish "product.Test/product.Test.csproj" -c $configuration -o /app/publish /p:UseAppHost=false
+
+# Final image (optional)
+FROM mcr.microsoft.com/dotnet/runtime:10.0 AS final
 WORKDIR /app
-COPY --from=publish /app/publish .
+COPY --from=build /app/publish .
 ENTRYPOINT ["dotnet", "product.Test.dll"]
